@@ -8,9 +8,11 @@ import '../widegts/HomeWidegts/searchbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
+
   providesomething(){
     return "Working";
   }
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -20,10 +22,10 @@ class HomePage extends StatelessWidget {
             Container(
 
               height: 230,
-              child: Stack(
+              child: const Stack(
                 children: [
-                  const Positioned(child:  Header()),
-                  const Positioned(top: 170,child:  SearchBar(),),
+                  Positioned(child:  Header()),
+                  Positioned(top: 170,child:  SearchBarInput()),
                 ],
               ),
             ),
